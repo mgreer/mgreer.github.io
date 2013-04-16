@@ -1,3 +1,99 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video
+{
+	border:0;
+	font:inherit;
+	font-size:100%;
+	margin:0;
+	padding:0;
+	vertical-align:baseline;
+}
+
+html
+{
+	line-height:1;
+}
+
+ol,ul
+{
+	list-style:none;
+}
+
+table
+{
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+caption,th,td
+{
+	font-weight:400;
+	text-align:left;
+	vertical-align:middle;
+}
+
+q,blockquote
+{
+	quotes:none;
+}
+
+q:before,q:after,blockquote:before,blockquote:after
+{
+	content:none;
+}
+
+a img
+{
+	border:none;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary
+{
+	display:block;
+}
+
+html,body
+{
+	background-color:#fff;
+	color:#0e1824;
+	font-family:"Helvetica Neue",helvetica,arial,sans-serif;
+	font-size:16px;
+	margin:0;
+  position:relative;
+}
+
+a
+{
+	-moz-transition-duration:.2s;
+	-moz-transition-property:color;
+	-o-transition-duration:.2s;
+	-o-transition-property:color;
+	-webkit-transition-duration:.2s;
+	-webkit-transition-property:color;
+	color:#d46a6a;
+	outline:none;
+	text-decoration:none;
+	transition-duration:.2s;
+	transition-property:color;
+}
+
+a:active
+{
+	outline:none;
+}
+
+/*custom*/
+.wrap{
+  max-width:940px;
+  margin:0 auto;
+}
+#head{
+	background:#fff url(../images/beach-back.jpg) no-repeat center -100px;
+	background-size:cover;
+	height:420px;
+	width:100%;
+  border-bottom:1px solid #444;
+}
+
 #logo{
   position:absolute;
   top:50px;
@@ -25,3 +121,14 @@
 #logo:hover #dot{
   opacity:1;
 }
+#back{
+  height:400px;
+  margin-bottom:-120px;
+}
+#text li{
+  width: 30%;
+  margin:10px;
+  float:left;
+}
+
+
