@@ -7,7 +7,7 @@
 </head>
 <body>
   
-<section id="head">
+<section id="head" data-type="background" data-speed="2">
   <div class="wrap">
     <div id="logo">
         <a href="mailto:info@bluetigerbox.com" id="box"><img src="images/blue-tiger-box-col.png" /></a>
@@ -16,7 +16,7 @@
   </div>
 </section>
 
-<section id="content">
+<section id="content" data-type="background" data-speed="10">
   <div class="wrap">
     <div id="text">
       <ul>
@@ -45,8 +45,33 @@
   </div>
 </section>
   
+
+<section id="head" data-type="background" data-speed="2">
+<div class="wrap">
+  <div id="logo">
+      <a href="mailto:info@bluetigerbox.com" id="box"><img src="images/blue-tiger-box-col.png" /></a>
+      <img id="dot" src="images/bluedot.png" />      
+  </div>
+</div>
+</section>  
+
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>
+    $(document).ready(function(){
+        $('section[data-type="background"]').each(function(){
+            var $bgobj = $(this); // assigning the object
+
+            $(window).scroll(function() {
+                var yPos = -($(window).scrollTop() / $bgobj.data('speed')); 
+
+                // Put together our final background position
+                var coords = '50% '+ yPos + 'px';
+
+                // Move the background
+                $bgobj.css({ backgroundPosition: coords });
+            }); 
+        });    
+    });  
   </script>
 </body>
 </html>
