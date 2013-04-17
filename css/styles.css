@@ -114,18 +114,18 @@ a:active
 
 #logo #box img
 {
-	height:100px;
-	width:100px;
+	height:200px;
+	width:200px;
 }
 
 #logo #dot
 {
-	height:5px;
-	left:73px;
+	height:10px;
+	width:10px;
+	left:126px;
 	opacity:0;
-	top:84px;
+	top:170px;
 	transition:opacity 500ms;
-	width:5px;
 }
 
 #logo:hover #dot
